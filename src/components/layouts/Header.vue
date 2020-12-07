@@ -4,7 +4,7 @@
 		<!-- nav -->
 		<nav class="py-4 d-lg-flex">
 			<div id="logo">
-				<h1> <router-link to="/"><span class="fa fa-leaf"></span> Tsavo Seeds</router-link></h1>
+				<h1> <router-link to="/"><span class="fa fa-leaf"></span> Tsavo Seed</router-link></h1>
 			</div>
 			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
 			<input type="checkbox" id="drop" />
@@ -13,7 +13,7 @@
 				<li class="mr-lg-4 mr-2"><router-link to="/about">About Us</router-link></li>
 				<li class="mr-lg-4 mr-2"><router-link to="/services">Services</router-link></li>
 				<li class="mr-lg-4 mr-2"><router-link to="/contact">Contact</router-link></li>
-				<li class="mr-lg-4 mr-2"><span><span class="fa fa-phone"></span> +12 345 6789</span></li>
+				<li class="mr-lg-4 mr-2"><span><span class="fa fa-phone"></span> <a href="tel:+254775643903">+254 775 643 903</a></span></li>
 			</ul>
 		</nav>
 		<!-- //nav -->

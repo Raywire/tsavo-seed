@@ -15,7 +15,7 @@
               </div>
               <div class="col-10 address-right">
                 <h5>Visit Us</h5>
-                <p>Agriculture Business, 2nd Block, Farm land, USA.</p>
+                <p>P.O. Box 236 - 00232, Ruiru, Kenya.</p>
               </div>
             </div>
           </div>
@@ -28,7 +28,7 @@
               </div>
               <div class="col-10 address-right">
                 <h5>Mail Us</h5>
-                <p><a href="mailto:info@example.com">Example@gmail.com</a></p>
+                <p><a href="mailto:info@tsavoseed.com">info@tsavoseed.com</a></p>
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@
               </div>
               <div class="col-10 address-right">
                 <h5>Call Us</h5>
-                <p>+12(345) 6789 111</p>
+                <p><a href="tel:+254775643903">+254 775 643 903</a></p>
               </div>
             </div>
           </div>
@@ -61,8 +61,9 @@
         </form>
         <!-- map -->
         <div class="map mt-5">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859251.8642025779!2d-76.08274894689792!3d40.06224332601239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0fb959e00409f%3A0x2cd27b07f83f6d8d!2sNew+Jersey%2C+USA!5e0!3m2!1sen!2sin!4v1474436926209"
-          allowfullscreen></iframe>
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859251.8642025779!2d-76.08274894689792!3d40.06224332601239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0fb959e00409f%3A0x2cd27b07f83f6d8d!2sRuiru%2C+KEN!5e0!3m2!1sen!2sin!4v1474436926209"
+          allowfullscreen></iframe> -->
+          <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Ruiru,%20Kenya+(Gicheha%20Farm)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
         <!-- //map -->
       </div>

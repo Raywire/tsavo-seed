@@ -5,7 +5,7 @@
       <!-- logo -->
       <h2 class="logo2 text-center">
         <a href="index.html">
-          <span class="fa fa-leaf"></span> Tsavo Seeds
+          <span class="fa fa-leaf"></span> Tsavo Seed
         </a>
       </h2>
       <!-- //logo -->
@@ -14,18 +14,18 @@
         <ul>
           <li>
             <p>
-              <span class="fa fa-map-marker mr-2"></span>Agriculture Business, 2nd Block, USA
+              <span class="fa fa-map-marker mr-2"></span>P.O. Box 236 - 00232, Ruiru, Kenya
             </p>
           </li>
           <li class="mx-4">
             <p>
-              <span class="fa fa-phone mr-2"></span>+12(345) 6789 111.
+              <span class="fa fa-phone mr-2"></span><a href="tel:+254775643903">+254 775 643 903</a>.
             </p>
           </li>
           <li>
             <p class="text-wh">
               <span class="fa fa-envelope-open mr-2"></span>
-              <a href="mailto:info@example.com">Example@gmail.com</a>
+              <a href="mailto:info@tsavoseed.com">info@tsavoseed.com</a>
             </p>
           </li>
         </ul>
@@ -69,7 +69,7 @@
       <!-- //social icons -->
       <!-- copyright -->
       <div class="w3l-copy text-center">
-        <p class="text-da">© {{ currentYear }} Tsavo Seeds. All rights reserved</p>
+        <p class="text-da">© {{ currentYear }} Tsavo Seed. All rights reserved</p>
       </div>
       <!-- //copyright -->
     </div>
