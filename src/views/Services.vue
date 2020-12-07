@@ -10,21 +10,29 @@
           <div class="col-lg-4 col-sm-6">
             <div class="home-grid">
               <span class="num-title">01</span>
-              <h4 class="home-title mt-3">Crop Cultivation</h4>
-              <p class="mt-2"> Pellentesque in ipsum id orci porta dapibus roined magna ipsum.</p>
+              <h4 class="home-title mt-3">Seed Production</h4>
+              <p class="mt-2 clamp-2">
+                Hybrid seed production is a very specialized field that requires high professional knowledge,
+                experience and passion. Our hybrid seed multiplication is done in our Ziwani farm under highly
+                mechanized production system. In Ziwani, the crop is irrigated using the pivot irrigation system.
+                The production is done professionally, implanting all the Good Agricultural Practices (GAP) that
+                gives our seeds a unique and un-matchable quality. The seed quality embraces germination
+                energy, total germination %, physical purity, genetic purity and wholesomeness.
+                The site meets all the standards stipulated by Kenya Plant Health Inspectorate Services (KEPHIS)
+              </p>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 mt-sm-0 mt-4">
             <div class="home-grid">
               <span class="num-title">02</span>
-              <h4 class="home-title mt-3">Farm Plantation</h4>
+              <h4 class="home-title mt-3">Seed Processing</h4>
               <p class="mt-2"> Pellentesque in ipsum id orci porta dapibus roined magna ipsum.</p>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 mt-lg-0 mt-4">
             <div class="home-grid">
               <span class="num-title">03</span>
-              <h4 class="home-title mt-3">Plant Renovation</h4>
+              <h4 class="home-title mt-3">Seed Packaging</h4>
               <p class="mt-2"> Pellentesque in ipsum id orci porta dapibus roined magna ipsum.</p>
             </div>
           </div>
@@ -35,14 +43,14 @@
             <div class="col-lg-6 col-sm-6">
               <div class="home-grid">
                 <span class="num-title">04</span>
-                <h4 class="home-title mt-3">Crop Harvesting</h4>
+                <h4 class="home-title mt-3">Seed Distribution</h4>
                 <p class="mt-2"> Pellentesque in ipsum id orci porta dapibus roined magna ipsum.</p>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6 mt-sm-0 mt-4">
               <div class="home-grid">
                 <span class="num-title">05</span>
-                <h4 class="home-title mt-3">Gardening Farm</h4>
+                <h4 class="home-title mt-3">Agronomic Support</h4>
                 <p class="mt-2"> Pellentesque in ipsum id orci porta dapibus roined magna ipsum.</p>
               </div>
             </div>
@@ -56,32 +64,27 @@
     <!-- Why Choose Us -->
     <section class="serives-agile py-5" id="works">
       <div class="container py-md-5">
-        <h3 class="heading mb-5 text-center"> Why Choose Us</h3>
+        <h3 class="heading mb-5 text-center"> Stakeholders Hub</h3>
         <div class="welcome-bottom text-center">
           <div class="welcome-grid">
             <span class="fa fa-apple"></span>
-            <h4 class="my-3">Grains </h4>
+            <h4 class="my-3">Agro-dealers </h4>
             <p>quis nostrum ullamet corporis suscipit.</p>
           </div>
           <div class="welcome-grid">
             <span class="fa fa-skyatlas"></span>
-            <h4 class="my-3">Seed Traits</h4>
+            <h4 class="my-3">Farmers</h4>
             <p>quis nostrum ullamet corporis suscipit.</p>
           </div>
 
-          <div class="welcome-grid mt-md-0 mt-5">
+          <div class="welcome-grid mt-lg-0 mt-md-4 mt-5">
             <span class="fa fa-yelp"></span>
-            <h4 class="my-3">Safety</h4>
+            <h4 class="my-3">Research & Development</h4>
             <p>quis nostrum ullamet corporis suscipit.</p>
           </div>
           <div class="welcome-grid mt-lg-0 mt-md-4 mt-5">
             <span class="fa fa-viadeo"></span>
-            <h4 class="my-3">Cultivation</h4>
-            <p>quis nostrum ullamet corporis suscipit.</p>
-          </div>
-          <div class="welcome-grid mt-lg-0 mt-md-4 mt-5">
-            <span class="fa fa-pagelines"></span>
-            <h4 class="my-3">Environment</h4>
+            <h4 class="my-3">County Updates</h4>
             <p>quis nostrum ullamet corporis suscipit.</p>
           </div>
           <div class="clearfix"></div>
