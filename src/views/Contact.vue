@@ -51,11 +51,11 @@
             <div class="col-md-6 contact-left">
               <input type="text" name="Name" placeholder="Your Name" required="">
               <input type="email" name="Email" placeholder="Email" required="">
-              <input type="text" name="Mobile Number" placeholder="Mobile Number" required="">
+              <input type="text" name="Subject" placeholder="Subject" required="">
             </div>
             <div class="col-md-6 contact-right mt-md-0 mt-4">
               <textarea name="Message" placeholder="Message" required=""></textarea>
-              <button class="btn">Submit</button>
+              <button class="btn">Send Message</button>
             </div>
           </div>
         </form>

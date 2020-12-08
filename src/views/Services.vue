@@ -26,14 +26,18 @@
             <div class="home-grid">
               <span class="num-title">02</span>
               <h4 class="home-title mt-3">Seed Processing</h4>
-              <p class="mt-2"> Pellentesque in ipsum id orci porta dapibus roined magna ipsum.</p>
+              <p class="mt-2 clamp-2">
+                In agriculture and horticulture, seed treatment or seed dressing is a chemical, typically antimicrobial or fungicidal, with which seeds are treated (or "dressed") prior to planting. Less frequently, insecticides are added. Seed treatments can be an environmentally more friendly way of using pesticides as the amounts used can be very small. It is usual to add colour to make treated seed less attractive to birds, and easier to see and clean up in the case of an accidental spillage. Specialist machinery is required to safely and efficiently apply the chemical to the seed. A seed coating is a thicker form of covering of seed and may contain fertiliser, growth promoters and or seed treatment as well as an inert carrier and a polymer outer shell. The term "seed dressing" is also used to refer to the process of removing chaff, weed seeds and straw from a seed stock.
+              </p>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 mt-lg-0 mt-4">
             <div class="home-grid">
               <span class="num-title">03</span>
               <h4 class="home-title mt-3">Seed Packaging</h4>
-              <p class="mt-2"> Pellentesque in ipsum id orci porta dapibus roined magna ipsum.</p>
+              <p class="mt-2 clamp-2">
+                It is important to package seed in dry containers for proper storage. For small quantities of seed, these containers may be tin cans, jars, or pots that are glazed on the inside; even reinforced boxes or bags can be suitable. Metal or plastic jerricans, or drums are often used to package large quantities of seed. Regardless of the type of container employed, it should be of standard size and shape, if possible, so that when one is filled with seed of a known purity percentage, the approximate number of seeds it contains can be estimated. Also, containers of standard sizes and shapes are easier to handle. For subsequent identification, each package of seed, or each aggregation of packages representing a given seed collection, should be labelled
+              </p>
             </div>
           </div>
         </div>
@@ -44,14 +48,20 @@
               <div class="home-grid">
                 <span class="num-title">04</span>
                 <h4 class="home-title mt-3">Seed Distribution</h4>
-                <p class="mt-2"> Pellentesque in ipsum id orci porta dapibus roined magna ipsum.</p>
+                <p class="mt-2 clamp-2">
+                  The overarching goal of functional seed systems is to ensure that seeds are available and accessible to all
+                  end users, notably smallholder farmers, in sufficient quantity, quality and diversity to produce sufficient nutritious food in a sustainable way for the household itself, other consumers, or both. In order to achieve
+                  this goal, seed systems rely on the interconnected performance of three key functions: seed production and distribution, innovation, regulation
+                </p>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6 mt-sm-0 mt-4">
               <div class="home-grid">
                 <span class="num-title">05</span>
                 <h4 class="home-title mt-3">Agronomic Support</h4>
-                <p class="mt-2"> Pellentesque in ipsum id orci porta dapibus roined magna ipsum.</p>
+                <p class="mt-2 clamp-2">
+                  Agronomic support is a complex of services provided by high-level professionals with the aim of increasing the profitability of crop production or the production of forage crops. Modern agrarian science does not stand still, so something new is constantly appearing - something that allows you to get extra profit. The use of such competitive advantages allows to obtain higher yields and increase the profitability of agribusiness.
+                </p>
               </div>
             </div>
           </div>
@@ -61,78 +71,20 @@
     </section>
     <!-- //services -->
 
-    <!-- Why Choose Us -->
-    <section class="serives-agile py-5" id="works">
-      <div class="container py-md-5">
-        <h3 class="heading mb-5 text-center"> Stakeholders Hub</h3>
-        <div class="welcome-bottom text-center">
-          <div class="welcome-grid">
-            <span class="fa fa-apple"></span>
-            <h4 class="my-3">Agro-dealers </h4>
-            <p>quis nostrum ullamet corporis suscipit.</p>
-          </div>
-          <div class="welcome-grid">
-            <span class="fa fa-skyatlas"></span>
-            <h4 class="my-3">Farmers</h4>
-            <p>quis nostrum ullamet corporis suscipit.</p>
-          </div>
-
-          <div class="welcome-grid mt-lg-0 mt-md-4 mt-5">
-            <span class="fa fa-yelp"></span>
-            <h4 class="my-3">Research & Development</h4>
-            <p>quis nostrum ullamet corporis suscipit.</p>
-          </div>
-          <div class="welcome-grid mt-lg-0 mt-md-4 mt-5">
-            <span class="fa fa-viadeo"></span>
-            <h4 class="my-3">County Updates</h4>
-            <p>quis nostrum ullamet corporis suscipit.</p>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-      </div>
-    </section>
-    <!-- Why Choose Us -->
+    <stake-holders></stake-holders>
 
     <!-- Products & Services -->
-    <section class="blog py-5">
-      <div class="container py-md-5">
-        <h3 class="heading mb-sm-5 mb-4 text-center"> Our Products and Services</h3>
-        <div class="row blog-grids">
-          <div class="col-lg-4 col-md-6 blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">	
-            <img src="../assets/images/s1.jpg" class="img-fliud" alt="" />
-            <div class="blog-info">
-              <h4>Farming Land <span class="fa fa-pagelines"></span></h4>
-              <p class="mt-2">Integer sit ut amet mattis quam, sit amet ultricies velit. Praesent ullam corper dui turpis sit.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-md-5">	
-            <img src="../assets/images/s2.jpg" class="img-fliud" alt="" />
-            <div class="blog-info">
-              <h4>Cultivation <span class="fa fa-pagelines"></span></h4>
-              <p class="mt-2">Integer sit ut amet mattis quam, sit amet ultricies velit. Praesent ullam corper dui turpis sit.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
-            <img src="../assets/images/s3.jpg" class="img-fliud" alt="" />
-            <div class="blog-info">
-              <h4>Harvesting <span class="fa fa-pagelines"></span></h4>
-              <p class="mt-2">Integer sit ut amet mattis quam, sit amet ultricies velit. Praesent ullam corper dui turpis sit.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <products></products>
     <!-- //Products & Services -->
 
     <!-- newsletter -->
     <div class="newsletter_right_w3 py-5">
       <div class="container py-lg-3">
       <h3 class="heading mb-4 text-center">Subscribe Newsletter</h3>
-        <p class="sub-tittle text-center mb-sm-5 mb-4">Sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+        <p class="sub-tittle text-center mb-sm-5 mb-4">Enter your email and hit subscribe to be up to date with our newsletter</p>
         <div class="n-right-w3ls">
           <form action="#" method="post" class="newsletter">
-            <input class="email" type="email" placeholder="Enter your email id..." required="">
+            <input class="email" type="email" placeholder="Enter your email ..." required="">
             <button class="form-control btn" value="">Subscribe</button>
           </form>
         </div>
@@ -144,10 +96,14 @@
 
 <script>
 import Banner from '@/components/layouts/Banner'
+import StakeHolders from '../components/StakeHolders.vue'
+import Products from '../components/Products.vue'
 export default {
   name: 'Services',
   components: {
-    Banner
+    Banner,
+    StakeHolders,
+    Products
   }
 }
 </script>

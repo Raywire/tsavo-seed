@@ -150,11 +150,11 @@ nav a {
 nav ul li ul li:hover { background: #f8f9fa; }
 
 /* Background color change on Hover */
-nav a:hover { 
-	color: #ddd;
+nav a:hover, .contact-left-footer ul li a:hover { 
+	color: #e8cd30;
 }
 .router-link-exact-active{ 
-	color: #fff;
+	color: #e8cd30;
 }
 
 /* Hide Dropdowns by Default
@@ -192,9 +192,6 @@ nav ul li span {
     padding-left: 0;
     padding-right: 0;
     font-weight: 700;
-}
-ul.menu li span.fa {
-    color: #e8cd30;
 }
 /* Second, Third and more Tiers	
  * We move the 2nd and 3rd etc tier dropdowns to the left
@@ -618,7 +615,7 @@ p.about-text {
     font-weight: 600;
     text-transform: uppercase;
 }
-.blog-info h4 span.fa {
+.blog-info span.fa {
     color: #009f4d;
 }
 /*-- //blog info --*/

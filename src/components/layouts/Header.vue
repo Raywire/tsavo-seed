@@ -13,7 +13,7 @@
 				<li class="mr-lg-4 mr-2"><router-link to="/about">About Us</router-link></li>
 				<li class="mr-lg-4 mr-2"><router-link to="/services">Services</router-link></li>
 				<li class="mr-lg-4 mr-2"><router-link to="/contact">Contact</router-link></li>
-				<li class="mr-lg-4 mr-2"><span><span class="fa fa-phone"></span> <a href="tel:+254775643903">+254 775 643 903</a></span></li>
+				<li class="mr-lg-4 mr-2"><span><a href="tel:+254775643903"><span class="fa fa-phone"></span> +254 775 643 903</a></span></li>
 			</ul>
 		</nav>
 		<!-- //nav -->
