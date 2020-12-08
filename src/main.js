@@ -7,6 +7,7 @@ import './assets/css/style.css'
 import './assets/css/font-awesome.min.css'
 import './assets/css/css_slider.css'
 import router from './router'
+import './config/firebaseConfig'
 
 Vue.use(Vuelidate)
 Vue.config.productionTip = false
