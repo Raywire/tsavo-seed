@@ -1,11 +1,11 @@
 <template>
-  <div id="app">
+  <div id="app" v-scroll="handleScroll">
     <Header></Header>
     <transition name="fade" mode="out-in">
       <router-view></router-view>
     </transition>
     <Footer></Footer>
-    <scroll-to-top></scroll-to-top>
+    <scroll-to-top id="scroller"></scroll-to-top>
   </div>
 </template>
 
@@ -13,6 +13,7 @@
 import Header from '@/components/layouts/Header.vue'
 import Footer from '@/components/layouts/Footer.vue'
 import ScrollToTop from '@/components/layouts/ScrollToTop.vue'
+import scroll from '@/directives/scroll'
 export default {
   name: 'App',
   components: {
@@ -20,12 +21,23 @@ export default {
     Footer,
     ScrollToTop
   },
+  directives: {
+    scroll
+  },
   mounted () {
     window.addEventListener("load", function () {setTimeout(this.hideURLbar, 0);}, false);
+    const element = document.querySelector('#scroller')
+    element.style.display = 'none'
   },
   methods: {
     hideURLbar () {
       window.scrollTo(0, 1);
+    },
+    handleScroll () {
+      const element = document.querySelector('#scroller')
+      if (element) {
+        window.scrollY > 800 ? element.style.display = 'block' : element.style.display = 'none'
+      }
     }
   }
 }
