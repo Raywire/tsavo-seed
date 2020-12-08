@@ -29,6 +29,20 @@
             </p>
           </li>
         </ul>
+        <ul>
+          <li class="mx-4">
+            <p class="text-wh">
+              <span class="fa fa-gavel mr-2"></span>
+              <router-link to="/terms">Terms</router-link>
+            </p>
+          </li>
+          <li>
+            <p class="text-wh">
+              <span class="fa fa-user-secret mr-2"></span>
+              <router-link to="/privacy">Privacy</router-link>
+            </p>
+          </li>
+        </ul>
       </div>
       <!-- //address -->
       <!-- social icons -->

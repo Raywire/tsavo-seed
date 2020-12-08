@@ -43,6 +43,22 @@ const routes = [
     }
   },
   {
+    path: '/terms',
+    name: 'terms',
+    component: lazyLoad('Terms'),
+    meta: {
+      title: 'Tsavo Seeds - Terms'
+    }
+  },
+  {
+    path: '/privacy',
+    name: 'privacy',
+    component: lazyLoad('Privacy'),
+    meta: {
+      title: 'Tsavo Seeds - Privacy'
+    }
+  },
+  {
     path: '*',
     name: '404Error',
     component: lazyLoad('errors/NotFound'),

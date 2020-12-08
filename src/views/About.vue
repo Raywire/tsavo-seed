@@ -4,7 +4,7 @@
     <!-- about -->
     <section class="about py-5" id="about">
       <div class="container py-lg-5 py-sm-3">
-        <h3 class="heading mb-sm-5 mb-4 text-center"> About Tsavo Seeds</h3>
+        <h3 class="heading mb-sm-5 mb-4 text-center"> About Tsavo Seed</h3>
         <div class="row">
           <div class="col-lg-6 about-left">
             <h5 class="mb-3">Few Words About Us!</h5>
