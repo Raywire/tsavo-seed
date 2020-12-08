@@ -46,11 +46,12 @@
             </div>
           </div>
         </div>
-        <form @submit.prevent="sendMessage">
+        <form @submit.prevent="sendMessage" novalidate>
           <div class="row">
             <div class="col-md-6 contact-left">
-              <div>
-                <input v-model="contact.name" type="text" placeholder="Your Name" maxlength="64" :class="{ error: $v.contact.name.$error }">
+              <div class="form-group">
+                <input v-model="contact.name" id="name" type="text" class="form-control" maxlength="64" :class="{ error: $v.contact.name.$error }" required>
+                <label class="form-control-placeholder" for="name">Name</label>
                 <span v-if="$v.contact.name.$dirty && !$v.contact.name.required" class="text-danger pt-2 small font-weight-bold">
                   Name is required
                 </span>
@@ -58,8 +59,9 @@
                   Name must be valid
                 </span>
               </div>
-              <div class="my-3">
-                <input v-model="contact.email" type="text" placeholder="Email" maxlength="64" :class="{ error: $v.contact.email.$error }">
+              <div class="form-group">
+                <input v-model="contact.email" id="email" type="email" class="form-control" maxlength="64" :class="{ error: $v.contact.email.$error }" required>
+                <label class="form-control-placeholder" for="email">Email</label>
                 <span v-if="$v.contact.email.$dirty && !$v.contact.email.required" class="text-danger small font-weight-bold">
                   Email is required
                 </span>
@@ -67,16 +69,18 @@
                   Email must be valid
                 </span>
               </div>
-              <div>
-                <input v-model="contact.subject" type="text" placeholder="Subject" maxlength="64" :class="{ error: $v.contact.subject.$error }">
+              <div class="form-group">
+                <input v-model="contact.subject" id="subject" type="text" class="form-control" maxlength="64" :class="{ error: $v.contact.subject.$error }" required>
+                <label class="form-control-placeholder" for="subject">Subject</label>
                 <span v-if="$v.contact.subject.$dirty && !$v.contact.subject.required" class="text-danger pt-2 small font-weight-bold">
                   Subject is required
                 </span>
               </div>
             </div>
             <div class="col-md-6 contact-right mt-md-0 mt-4">
-              <div>
-                <textarea v-model="contact.message" placeholder="Message" maxlength="256" :class="{ error: $v.contact.message.$error }"></textarea>
+              <div class="form-group">
+                <textarea v-model="contact.message" id="message" class="form-control" maxlength="256" :class="{ error: $v.contact.message.$error }" required></textarea>
+                <label class="form-control-placeholder" for="message">Message</label>
                 <span v-if="$v.contact.message.$dirty && !$v.contact.message.required" class="text-center text-danger pt-2 small font-weight-bold">
                   Message is required
                 </span>
@@ -179,7 +183,35 @@ export default {
 }
 </script>
 <style lang="css" scoped>
+.form-control:focus {
+  box-shadow: none;
+  border-color: #80bdff;
+  border-width: 1px;
+}
 .contact-left .error, .contact-right .error {
 	border: 1px solid red;
 }
+.form-group {
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+  font-weight: bold;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+  font-size: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
+  color: black;
+  font-weight: bold;
+}
+
 </style>
