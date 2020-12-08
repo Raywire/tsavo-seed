@@ -87,12 +87,14 @@
               </button>
             </div>
           </div>
-          <div v-if="message && showMessage" class="alert mt-4" :class="alert" role="alert">
-            {{ message }}
-            <button type="button" class="close" @click="showMessage = false" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+          <transition name="fade">
+            <div v-if="message && showMessage" class="alert mt-4 font-weight-bold" :class="alert" role="alert">
+              {{ message }}
+              <button type="button" class="close" @click="showMessage = false" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </transition>
         </form>
         <!-- map -->
         <div class="map mt-5">
