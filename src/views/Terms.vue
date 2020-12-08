@@ -153,7 +153,7 @@
               <a :href="domain">{{ domain }}</a> is registered with {{ registrar.name }}, Inc. You can find the online version of the register at {{ registrar.link }}.
               </p>
               <h2>{{ company }}'s details </h2>
-              <p>You can contact {{ company }} by email at <a :href="`mailto:${mail}`">{{ email }}.</a></p>
+              <p>You can contact {{ company }} by email at <a :href="`mailto:${email}`">{{ email }}.</a></p>
             </div>
           </div>
 
