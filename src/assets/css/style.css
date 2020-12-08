@@ -1057,14 +1057,14 @@ form.newsletter {
 /*-- contact --*/ 
 .contact-left input[type="text"],.contact-left input[type="email"]{
 	border: 1px solid #ccc;
-    font-size: 1em;
-    color: #828282;
-    background: none;
-    width: 100%;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding: 15px 20px;
-    outline: none;
+	font-size: 1em;
+	color: #828282;
+	background: none;
+	width: 100%;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 15px 20px;
+	outline: none;
 }
 .contact-right textarea{
 	border:1px solid #ccc;
@@ -1072,16 +1072,14 @@ form.newsletter {
 	color:#828282;
 	background:none;
 	width:100%;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding: 15px 20px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 15px 20px;
 	outline:none;
-    min-height: 8.5em;
+  min-height: 8.5em;
 	resize:none;
 }
-.contact-left input[type="email"]{
-	margin:1.5em 0;
-}
+
 .contact-right button.btn { 
     padding: .8em 1em;
     color: #fff;

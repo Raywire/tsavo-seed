@@ -46,17 +46,49 @@
             </div>
           </div>
         </div>
-        <form action="#" method="post">
+        <form @submit.prevent="sendMessage">
           <div class="row">
             <div class="col-md-6 contact-left">
-              <input type="text" name="Name" placeholder="Your Name" required="">
-              <input type="email" name="Email" placeholder="Email" required="">
-              <input type="text" name="Subject" placeholder="Subject" required="">
+              <div>
+                <input v-model="contact.name" type="text" placeholder="Your Name" maxlength="64" :class="{ error: $v.contact.name.$error }">
+                <span v-if="$v.contact.name.$dirty && !$v.contact.name.required" class="text-danger pt-2 small font-weight-bold">
+                  Name is required
+                </span>
+                <span v-if="$v.contact.name.$dirty && !$v.contact.name.isNameValid" class="text-danger pt-2 small font-weight-bold">
+                  Name must be valid
+                </span>
+              </div>
+              <div class="my-3">
+                <input v-model="contact.email" type="text" placeholder="Email" maxlength="64" :class="{ error: $v.contact.email.$error }">
+                <span v-if="$v.contact.email.$dirty && !$v.contact.email.required" class="text-danger small font-weight-bold">
+                  Email is required
+                </span>
+                <span v-if="$v.contact.email.$dirty && !$v.contact.email.email" class="text-danger small font-weight-bold">
+                  Email must be valid
+                </span>
+              </div>
+              <div>
+                <input v-model="contact.subject" type="text" placeholder="Subject" maxlength="64" :class="{ error: $v.contact.subject.$error }">
+                <span v-if="$v.contact.subject.$dirty && !$v.contact.subject.required" class="text-danger pt-2 small font-weight-bold">
+                  Subject is required
+                </span>
+              </div>
             </div>
             <div class="col-md-6 contact-right mt-md-0 mt-4">
-              <textarea name="Message" placeholder="Message" required=""></textarea>
-              <button class="btn">Send Message</button>
+              <div>
+                <textarea v-model="contact.message" placeholder="Message" maxlength="256" :class="{ error: $v.contact.message.$error }"></textarea>
+                <span v-if="$v.contact.message.$dirty && !$v.contact.message.required" class="text-center text-danger pt-2 small font-weight-bold">
+                  Message is required
+                </span>
+              </div>
+              <button class="btn">
+                Send Message
+                <spinner v-if="sending"></spinner>
+              </button>
             </div>
+          </div>
+          <div v-if="message && showMessage" class="alert mt-4" :class="alert" role="alert">
+            {{ message }}
           </div>
         </form>
         <!-- map -->
@@ -73,11 +105,78 @@
 </template>
 
 <script>
+import { required, maxLength, helpers, email } from 'vuelidate/lib/validators'
+import sgMail from '@sendgrid/mail'
 import Banner from '@/components/layouts/Banner'
+import Spinner from '../components/Spinner.vue'
+
+const isNameValid = helpers.regex('isUsernameValid', /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/)
+
 export default {
   name: 'Contact',
   components: {
-    Banner
+    Banner,
+    Spinner
+  },
+  data() {
+    return {
+      submitted: false,
+      sending: false,
+      message: '',
+      showMessage: false,
+      alert: 'alert-primary',
+      contact: {
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      }
+    }
+  },
+  validations: {
+    contact: {
+      name: { required, maxLength: maxLength(32), isNameValid },
+      email: { required, email},
+      subject: { maxLength: maxLength(64), required },
+      message: { maxLength: maxLength(256), required },
+    }
+  },
+  methods: {
+    sendMessage () {
+      this.$v.$touch()
+      if (!this.$v.$invalid) {
+        this.submitted = true
+        this.sending = true
+        const { name, email, subject, message } = this.contact
+
+        const msg = {
+          to: 'info@tsavoseed.com',
+          from: email,
+          subject,
+          text:`${message}\n\n${name}`,
+        }
+        sgMail
+          .send(msg)
+          .then(() => {
+            this.sending = false
+            this.message = 'Your message has been sent'
+            this.showMessage = true
+            this.alert = 'alert-success'
+          })
+          .catch((error) => {
+            console.error(error)
+            this.sending = false
+            this.message = 'Your message has not been sent, please try again'
+            this.showMessage = true
+            this.alert = 'alert-danger'
+          })
+      }
+    }
   }
 }
 </script>
+<style lang="css" scoped>
+.contact-left .error, .contact-right .error {
+	border: 1px solid red;
+}
+</style>
