@@ -70,7 +70,7 @@
                 </span>
               </div>
               <div class="form-group">
-                <input v-model="contact.subject" id="subject" type="text" class="form-control" maxlength="64" :class="{ error: $v.contact.subject.$error }" required>
+                <input v-model="contact.subject" id="subject" type="text" class="form-control" autocomplete="off" maxlength="64" :class="{ error: $v.contact.subject.$error }" required>
                 <label class="form-control-placeholder" for="subject">Subject</label>
                 <span v-if="$v.contact.subject.$dirty && !$v.contact.subject.required" class="text-danger pt-2 small font-weight-bold">
                   Subject is required
@@ -113,7 +113,6 @@
 
 <script>
 import { required, maxLength, helpers, email } from 'vuelidate/lib/validators'
-import sgMail from '@sendgrid/mail'
 import Banner from '@/components/layouts/Banner'
 import Spinner from '../components/Spinner.vue'
 
@@ -127,7 +126,6 @@ export default {
   },
   data() {
     return {
-      submitted: false,
       sending: false,
       message: '',
       showMessage: false,
@@ -137,13 +135,14 @@ export default {
         email: '',
         subject: '',
         message: ''
-      }
+      },
+      apiUrl: process.env.VUE_APP_API_URL
     }
   },
   validations: {
     contact: {
       name: { required, maxLength: maxLength(32), isNameValid },
-      email: { required, email},
+      email: { required, email, maxLength: maxLength(64)},
       subject: { maxLength: maxLength(64), required },
       message: { maxLength: maxLength(256), required },
     }
@@ -151,32 +150,48 @@ export default {
   methods: {
     sendMessage () {
       this.$v.$touch()
-      if (!this.$v.$invalid) {
-        this.submitted = true
+      if (!this.$v.$invalid && !this.sending) {
         this.sending = true
-        const { name, email, subject, message } = this.contact
 
-        const msg = {
-          to: 'info@tsavoseed.com',
-          from: email,
-          subject,
-          text:`${message}\n\n${name}`,
+        const data = this.contact
+
+        const options = {
+            method: 'POST',
+            body: JSON.stringify({ data }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
         }
-        sgMail
-          .send(msg)
-          .then(() => {
-            this.sending = false
-            this.message = 'Your message has been sent'
-            this.showMessage = true
-            this.alert = 'alert-success'
-          })
-          .catch((error) => {
-            console.error(error)
-            this.sending = false
-            this.message = 'Your message has not been sent, please try again'
-            this.showMessage = true
-            this.alert = 'alert-danger'
-          })
+
+        fetch(`${this.apiUrl}/api/send`, options)
+            .then(res => res.json())
+            .then(res => {
+              if (res.success) {
+                this.sending = false
+                this.message = 'Your message has been sent'
+                this.showMessage = true
+                this.alert = 'alert-success'
+                
+                this.contact = {
+                  name: '',
+                  email: '',
+                  subject: '',
+                  message: ''
+                }
+                this.$v.$reset()
+              } else {
+                this.sending = false
+                this.message = 'Your message has not been sent, please try again'
+                this.showMessage = true
+                this.alert = 'alert-danger'
+              }
+              })
+            .catch(error => {
+              this.sending = false
+              this.message = `${error.message}, please try again`
+              this.showMessage = true
+              this.alert = 'alert-danger'
+            })
       }
     }
   }

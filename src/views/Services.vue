@@ -83,10 +83,26 @@
       <h3 class="heading mb-4 text-center">Subscribe Newsletter</h3>
         <p class="sub-tittle text-center mb-sm-5 mb-4">Enter your email and hit subscribe to be up to date with our newsletter</p>
         <div class="n-right-w3ls">
-          <form action="#" method="post" class="newsletter">
-            <input class="email" type="email" placeholder="Enter your email ..." required="">
-            <button class="form-control btn" value="">Subscribe</button>
+          <form class="newsletter" @submit.prevent="subscribe" novalidate :class="{ error: $v.contact.email.$error }">
+            <input class="email" v-model="contact.email" type="email" placeholder="Enter your email ...">
+            <button class="form-control btn">Subscribe
+              <spinner v-if="sending"></spinner>
+            </button>
           </form>
+          <span v-if="$v.contact.email.$dirty && !$v.contact.email.required" class="text-danger small font-weight-bold">
+            Email is required
+          </span>
+          <span v-if="$v.contact.email.$dirty && !$v.contact.email.email" class="text-danger small font-weight-bold">
+            Email must be valid
+          </span>
+          <transition name="fade">
+            <div v-if="message && showMessage" class="alert mt-4 font-weight-bold" :class="alert" role="alert">
+              {{ message }}
+              <button type="button" class="close" @click="showMessage = false" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </transition>
         </div>
       </div>
     </div>
@@ -95,15 +111,53 @@
 </template>
 
 <script>
+import { required, maxLength, email } from 'vuelidate/lib/validators'
 import Banner from '@/components/layouts/Banner'
 import StakeHolders from '../components/StakeHolders.vue'
 import Products from '../components/Products.vue'
+import Spinner from '../components/Spinner.vue'
+
 export default {
   name: 'Services',
   components: {
     Banner,
     StakeHolders,
-    Products
+    Products,
+    Spinner,
+  },
+  data() {
+    return {
+      sending: false,
+      message: '',
+      showMessage: false,
+      alert: 'alert-primary',
+      contact: {
+        email: ''
+      },
+      apiUrl: process.env.VUE_APP_API_URL
+    }
+  },
+  validations: {
+    contact: {
+      email: { required, email, maxLength: maxLength(64)},
+    }
+  },
+  methods: {
+    subscribe () {
+      this.$v.$touch()
+      if (!this.$v.$invalid && !this.sending) {
+        this.sending = true
+        this.message = 'Your have successfully subscribed to our newsletter'
+        this.showMessage = true
+        this.alert = 'alert-success'
+        this.sending = false
+      }
+    }
   }
 }
 </script>
+<style scoped>
+.error {
+	border: 1px solid red;
+}
+</style>

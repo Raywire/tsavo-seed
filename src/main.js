@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Vuelidate from 'vuelidate'
-import sgMail from '@sendgrid/mail'
 import './assets/css/bootstrap.css'
 import './assets/css/style.css'
 import './assets/css/font-awesome.min.css'
@@ -11,7 +10,6 @@ import './config/firebaseConfig'
 
 Vue.use(Vuelidate)
 Vue.config.productionTip = false
-sgMail.setApiKey(process.env.VUE_APP_SENDGRID_API_KEY)
 
 new Vue({
   router,
