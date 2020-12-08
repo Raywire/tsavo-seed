@@ -5,7 +5,7 @@
       <!-- logo -->
       <h2 class="logo2 text-center">
         <a href="index.html">
-          <span class="fa fa-leaf"></span> Tsavo Seed
+          <img src="../../assets/images/logo.png" alt="" srcset=""> Tsavo Seed
         </a>
       </h2>
       <!-- //logo -->

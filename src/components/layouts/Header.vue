@@ -4,7 +4,7 @@
 		<!-- nav -->
 		<nav class="py-4 d-lg-flex">
 			<div id="logo">
-				<h1> <router-link to="/"><span class="fa fa-leaf"></span> Tsavo Seed</router-link></h1>
+				<h1> <router-link to="/"><img src="../../assets/images/logo.png" alt="Logo" srcset=""> Tsavo Seed</router-link></h1>
 			</div>
 			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
 			<input type="checkbox" id="drop" />

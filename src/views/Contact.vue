@@ -89,12 +89,13 @@
           </div>
           <div v-if="message && showMessage" class="alert mt-4" :class="alert" role="alert">
             {{ message }}
+            <button type="button" class="close" @click="showMessage = false" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
         </form>
         <!-- map -->
         <div class="map mt-5">
-          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859251.8642025779!2d-76.08274894689792!3d40.06224332601239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0fb959e00409f%3A0x2cd27b07f83f6d8d!2sRuiru%2C+KEN!5e0!3m2!1sen!2sin!4v1474436926209"
-          allowfullscreen></iframe> -->
           <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Ruiru,%20Kenya+(Gicheha%20Farm)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
         <!-- //map -->

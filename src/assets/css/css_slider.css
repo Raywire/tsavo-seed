@@ -208,7 +208,7 @@
     position: absolute;
     top: -50%;
     padding: 9px;
-    box-shadow: inset 2px -2px 0 1px #e8cd30;
+    box-shadow: inset 2px -2px 0 1px #FF9C26;
     cursor: pointer;
     -moz-transition: box-shadow 0.15s, margin 0.15s;
     -o-transition: box-shadow 0.15s, margin 0.15s;
@@ -217,7 +217,7 @@
 }
 
 .csslider>.arrows label:hover {
-    box-shadow: inset 5px -2px 0 9px #e8cd30;
+    box-shadow: inset 5px -2px 0 9px #FF9C26;
     margin: 0 0px;
 }
 

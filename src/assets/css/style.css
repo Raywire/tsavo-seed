@@ -92,6 +92,11 @@ nav {
 	padding: 0;
 }
 
+header img, footer img {
+	width: 64px;
+	margin-bottom: 4px;
+}
+
 
 #logo a {
 	float: left;
@@ -105,7 +110,7 @@ nav {
     border: none;
 }
 #logo a span.fa {
-    color: #e8cd30;
+    color: #FF9C26;
 }
 
 
@@ -151,10 +156,10 @@ nav ul li ul li:hover { background: #f8f9fa; }
 
 /* Background color change on Hover */
 nav a:hover, .contact-left-footer ul li a:hover { 
-	color: #e8cd30;
+	color: #FF9C26;
 }
 .router-link-exact-active{ 
-	color: #e8cd30;
+	color: #FF9C26;
 }
 
 /* Hide Dropdowns by Default
@@ -221,7 +226,7 @@ li > a:only-child:after { content: ''; }
 		float: none;
 	}
 	.router-link-exact-active {
-		color: #009f4d;
+		color: #014E27;
 	}
 	nav ul li span {
 		color: #333;
@@ -248,7 +253,7 @@ li > a:only-child:after { content: ''; }
 		text-decoration: none;
 		border: none;
 		float: right;
-		background-color: #009f4d;
+		background-color: #014E27;
 		color: #fff;
 	}
 	.menu .toggle {
@@ -480,7 +485,7 @@ p.about-text {
 }
 .feature-grids .f-icon {
     vertical-align: middle;
-    background: #009f4d;
+    background: #014E27;
     width: 70px;
     height: 70px;
     line-height: 70px;
@@ -519,7 +524,7 @@ p.about-text {
 
 /*-- works --*/
 .serives-agile {
-    background: #009f4d;
+    background: #014E27;
 }
 .serives-agile h3.heading{
 	color: #fff;
@@ -538,7 +543,7 @@ p.about-text {
 }
 .welcome-grid span.fa {
     color: #5eca9f;
-    color: #e8cd30;
+    color: #FF9C26;
     font-size: 50px;
     margin-bottom: 10px;
 }
@@ -616,7 +621,7 @@ p.about-text {
     text-transform: uppercase;
 }
 .blog-info span.fa {
-    color: #009f4d;
+    color: #014E27;
 }
 /*-- //blog info --*/
 
@@ -641,7 +646,7 @@ p.about-text {
 	color: #fff;
 }
 .text h3.heading span {
-    color: #e8cd30;
+    color: #FF9C26;
 }
 .text p {
     color: #ccc;
@@ -657,7 +662,7 @@ p.about-text {
     padding: 12px 25px;
     margin-top: 30px;
     border-radius: 4px;
-    background: #e8cd30;
+    background: #FF9C26;
     display: inline-block;
 }
 .text a.btn1 {
@@ -668,7 +673,7 @@ p.about-text {
     padding: 12px 25px;
     margin-top: 30px;
     border-radius: 4px;
-    background: #009f4d;
+    background: #014E27;
     display: inline-block;
 }
 /*--  //text --*/
@@ -693,7 +698,7 @@ p.footer-para {
 }
 
 .logo2 a span.fa {
-	color: #e8cd30;
+	color: #FF9C26;
 }
 
 /*-- //footer logo --*/
@@ -770,7 +775,7 @@ footer{
 
 /*-- about page --*/
 .about-left h5 {
-    color: #009f4d;
+    color: #014E27;
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 24px;
@@ -796,7 +801,7 @@ footer{
 .about span.fa-quote-left {
     font-size: 20px;
     vertical-align: top;
-    color: #009f4d;
+    color: #014E27;
 }
 
 .banner-bottom {
@@ -832,7 +837,7 @@ h4.abt-text {
     line-height: 1.4em;
 }
 .abt_bottom{
-    background: #009f4d;
+    background: #014E27;
 }
 .abt_bottom a.serv_link {
     font-size: 17px;
@@ -841,7 +846,7 @@ h4.abt-text {
     font-weight: 700;
     padding: 12px 25px;
     border-radius: 4px;
-    background: #e8cd30;
+    background: #FF9C26;
     display: inline-block;
 	margin-top:10px;
 }
@@ -951,7 +956,7 @@ p.count-text {
 }
 
 .home-grid span {
-    color: #009f4d;
+    color: #014E27;
     font-size: 1.5em;
     font-weight: 700;
     position: absolute;
@@ -1037,7 +1042,7 @@ form.newsletter {
     padding: 12px 15px;
     text-transform: uppercase;
     text-decoration: none;
-    background: #009f4d;
+    background: #014E27;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -1086,7 +1091,7 @@ form.newsletter {
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 1em;
-    background: #009f4d;
+    background: #014E27;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -1118,7 +1123,7 @@ form.newsletter {
     color: #03A9F4; 
 } 
 .address-row .contact-icon {
-    background: #009f4d;
+    background: #014E27;
     width:60px;
 	height:60px;
 	line-height: 60px;
@@ -1179,9 +1184,6 @@ form.newsletter {
 
 /*-- move top --*/
 span.move-top {
-    width: 34px;
-    height: 34px;
-    background: url(../images/move-top.png) no-repeat;
     display: inline-block;
     position: fixed;
     bottom: 4%;
@@ -1611,7 +1613,7 @@ span.move-top {
   pointer-events: none;
 }
 #nprogress .bar {
-  background: #ac8e06;
+  background: #FF9C26;
   position: fixed;
   z-index: 1031;
   top: 0;
@@ -1626,7 +1628,7 @@ span.move-top {
   right: 0px;
   width: 100px;
   height: 100%;
-  box-shadow: 0 0 10px #ac8e06, 0 0 5px #ac8e06;
+  box-shadow: 0 0 10px #FF9C26, 0 0 5px #FF9C26;
   opacity: 1.0;
 
   -webkit-transform: rotate(3deg) translate(0px, -4px);
