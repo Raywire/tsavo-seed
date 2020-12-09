@@ -102,7 +102,7 @@
         </form>
         <!-- map -->
         <div class="map mt-5">
-          <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Ruiru,%20Kenya+(Gicheha%20Farm)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+          <google-maps :coordinates="coordinates" :zoom="18"></google-maps>
         </div>
         <!-- //map -->
       </div>
@@ -115,6 +115,7 @@
 import { required, maxLength, helpers, email } from 'vuelidate/lib/validators'
 import Banner from '@/components/layouts/Banner'
 import Spinner from '../components/Spinner.vue'
+import GoogleMaps from '../components/GoogleMaps.vue'
 
 const isNameValid = helpers.regex('isUsernameValid', /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/)
 
@@ -122,7 +123,8 @@ export default {
   name: 'Contact',
   components: {
     Banner,
-    Spinner
+    Spinner,
+    GoogleMaps
   },
   data() {
     return {
@@ -136,7 +138,8 @@ export default {
         subject: '',
         message: ''
       },
-      apiUrl: process.env.VUE_APP_API_URL
+      apiUrl: process.env.VUE_APP_API_URL,
+      coordinates: '-1.1472, 36.959' //coordinates for Gicheha Farm Ltd.
     }
   },
   validations: {
