@@ -1641,3 +1641,6 @@ span.move-top {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+html {
+  scroll-behavior: smooth;
+}

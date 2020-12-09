@@ -15,7 +15,7 @@ const routes = [
     name: 'home',
     component: lazyLoad('Home'),
     meta: {
-      title: 'Tsavo Seeds'
+      title: 'Tsavo Seed'
     }
   },
   {
@@ -23,7 +23,7 @@ const routes = [
     name: 'about',
     component: lazyLoad('About'),
     meta: {
-      title: 'Tsavo Seeds - About'
+      title: 'Tsavo Seed - About'
     }
   },
   {
@@ -31,7 +31,7 @@ const routes = [
     name: 'services',
     component: lazyLoad('Services'),
     meta: {
-      title: 'Tsavo Seeds - Contact'
+      title: 'Tsavo Seed - Services'
     }
   },
   {
@@ -39,7 +39,7 @@ const routes = [
     name: 'contact',
     component: lazyLoad('Contact'),
     meta: {
-      title: 'Tsavo Seeds - Contact'
+      title: 'Tsavo Seed - Contact'
     }
   },
   {
@@ -47,7 +47,7 @@ const routes = [
     name: 'terms',
     component: lazyLoad('Terms'),
     meta: {
-      title: 'Tsavo Seeds - Terms'
+      title: 'Tsavo Seed - Terms'
     }
   },
   {
@@ -55,7 +55,7 @@ const routes = [
     name: 'privacy',
     component: lazyLoad('Privacy'),
     meta: {
-      title: 'Tsavo Seeds - Privacy'
+      title: 'Tsavo Seed - Privacy'
     }
   },
   {
@@ -63,7 +63,7 @@ const routes = [
     name: '404Error',
     component: lazyLoad('errors/NotFound'),
     meta: {
-      title: 'Tsavo Seeds - Not Found'
+      title: 'Tsavo Seed - Not Found'
     }
   }
 ]
@@ -77,7 +77,8 @@ const router = new VueRouter({
       return savedPosition
     } else if (to.hash) {
       return {
-        selector: to.hash
+        selector: to.hash,
+        behavior: 'smooth',
       }
     } else {
       return { x: 0, y: 0 }
