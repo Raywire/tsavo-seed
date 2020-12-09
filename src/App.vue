@@ -44,10 +44,6 @@ export default {
 </script>
 
 <style>
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 .fade-enter-active, .fade-leave-active {
   transition: opacity .3s ease;
 }
