@@ -148,7 +148,7 @@
         <div class="container py-md-3">
           <div class="row core-grids">
             <div class="col-4 bg-left">	
-              <h4 class="">We Are Innovators in Agricultural Business. Our goal is to bring hight quality hybrid seeds.</h4>
+              <h4 class="">We Are Innovators in Agricultural Business. Our goal is to bring high quality hybrid seeds.</h4>
             </div>
           </div>
         </div>
