@@ -8,11 +8,11 @@
     </button>
 
     <!-- Modal -->
-    <div class="modal" :class="{ show : modalOpen }" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal fade" :class="{ show : modalOpen }" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalTitle">{{ title }}</h5>
+            <h5 class="modal-title font-weight-bold" id="modalTitle">{{ title }}</h5>
             <button type="button" class="close" v-on:click="modalOpen = false" data-dismiss="modal" aria-label="Close">
               <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
@@ -53,3 +53,22 @@ export default {
   },
 }
 </script>
+<style scoped>
+.fade {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:.3s;
+  -moz-animation-duration:.3s;
+  animation-duration:.3s;
+}
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+</style>
