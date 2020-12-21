@@ -25,6 +25,9 @@
           <p></p>
         </div>
         <div class="clearfix"></div>
+        <div class="">
+          <router-link to="/hub" class="hub-btn">Read More</router-link>
+        </div>
       </div>
     </div>
   </section>
