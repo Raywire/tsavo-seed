@@ -79,14 +79,14 @@
     <!-- about -->
     <section class="about py-5">
       <div class="container py-md-4">
-        <h3 class="heading text-center mb-4">Main Products</h3>
+        <h3 class="heading text-center mb-4">Our Products</h3>
         <div class="feature-grids row mt-5 text-center">
           <div class="col-lg-4 col-md-6 ">
             <div class="bottom-gd px-2 text-center">
               <div class="f-icon">
                 <span class="fa fa-leaf" aria-hidden="true"></span>
               </div>
-              <h3 class="mt-4"> Seed Maize</h3>
+              <h3 class="mt-4">Maize Seeds</h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
@@ -94,7 +94,7 @@
               <div class="f-icon">
                 <span class="fa fa-pagelines" aria-hidden="true"></span>
               </div>
-              <h3 class="mt-4"> Seed Beans</h3>
+              <h3 class="mt-4">Bean Seeds</h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
@@ -110,55 +110,28 @@
     </section>
     <!-- //about -->
 
+    <!-- Products & Services -->
+    <products :showHeader="false"></products>
+    <!-- //Products & Services -->
+
     <stake-holders></stake-holders>
 
     <!-- core values -->
     <section class="core-value py-5">
       <div class="container py-md-4">
-        <h3 class="heading mb-sm-5 mb-4 text-center"> Our Core Values</h3>
         <div class="row core-grids">
           <div class="col-lg-6 core-left">	
             <img src="../assets/images/core.jpg" class="img-fliud" alt="" />
           </div>
-          <div class="col-lg-6 core-right">
-            <!-- <h4 class="mt-4">Improving Agriculture, Improving Lives, Cultivating New Crops To Make Farmers Increase Profit.</h4> -->
-            <!-- <p class="mt-3">Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullam corper dui turpis dolor sit amet quam.
-            Nulla commodo gravida porttitor. Aenean posuere lacus quis leo imperdiet laoreet. Proin vulputate semper odio quam. Nulla commodo 
-            gravida porttitor. Aenean posuere lacus quis.</p> -->
-            <p>
-              <ul>
-                <li><span class="fa fa-pagelines"></span> Professionalism</li>
-                <li><span class="fa fa-pagelines"></span> Commitment</li>
-                <li><span class="fa fa-pagelines"></span> Team Work</li>
-                <li><span class="fa fa-pagelines"></span> Trust</li>
-                <li><span class="fa fa-pagelines"></span> Quality</li>
-                <li><span class="fa fa-pagelines"></span> Innovation</li>
-                <li><span class="fa fa-pagelines"></span> Growing Together</li>
-              </ul>
-            </p>
+          <div class="col-lg-6 core-right text-center mt-3">
+            <h4 class="text-capitalize mt-4"><span class="fa fa-quote-left text-color mr-2"></span>
+              We Are Innovators in Agricultural Business. Our goal is to bring high quality hybrid seeds.
+            <span class="fa fa-quote-right text-color mr-2"></span></h4>
           </div>
         </div>
       </div>
     </section>
     <!-- //core values -->
-      
-    <!-- text -->
-    <section class="background-img">
-      <div class="overlay-clr py-5">
-        <div class="container py-md-3">
-          <div class="row core-grids">
-            <div class="col-4 bg-left">	
-              <h4 class="">We Are Innovators in Agricultural Business. Our goal is to bring high quality hybrid seeds.</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- //text -->
-
-    <!-- Products & Services -->
-    <products></products>
-    <!-- //Products & Services -->
 
     <!-- text -->
     <section class="text py-5">
@@ -184,7 +157,3 @@ export default {
   name: 'Home',
 }
 </script>
-
-<style>
-
-</style>

@@ -513,7 +513,8 @@ p.about-text {
 .core-grids p {
     letter-spacing: 1px;
 }
-.core-right h4 {
+.core-right h4, .core-left h4 {
+		color: #014E27;
     font-size: 26px;
     line-height: 42px;
     letter-spacing: 2px;
@@ -591,6 +592,13 @@ p.about-text {
 /*-- //bg --*/
 
 /*-- blog info --*/
+.blog {
+	background-color: #f2f2f2;
+}
+.card {
+	border-radius: 0.5em;
+  /* box-shadow: 0 0 2px rgba(1, 78, 39, 0.6); */
+}
 
 .blog-grids {
     margin-bottom: 120px;
@@ -650,7 +658,7 @@ p.about-text {
     margin: auto;
     letter-spacing: 1px;
 }
-.text a.btn {
+.text a.btn, .hub-btn {
     font-size: 17px;
     letter-spacing: 2px;
     color: #333;
@@ -660,6 +668,9 @@ p.about-text {
     border-radius: 4px;
     background: #FF9C26;
     display: inline-block;
+}
+.hub-btn:hover {
+	color: #014E27
 }
 .text a.btn1 {
     font-size: 17px;
