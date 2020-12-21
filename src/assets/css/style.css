@@ -794,7 +794,7 @@ footer{
 	letter-spacing: 1px;
 }
 
-.about span.fa-quote-left {
+.about span.fa-quote-left, .about span.fa-quote-right{
     font-size: 20px;
     vertical-align: top;
     color: #014E27;
@@ -925,7 +925,7 @@ p.count-text {
     font-size: 22px;
     letter-spacing: 2px;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-top: 1em;
 }
 .caption ul li {
@@ -1645,4 +1645,17 @@ html {
 }
 .modal {
   background-color: rgba(0, 0, 0, 0.5);
+}
+.w3-stats {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 1em
+}
+.img-container img{
+	width: 15em;
+	height:15em;
+	border: 1px solid black;
+	border-radius: 15em;
+}
+.about-list li{
+	list-style-type: disc;
 }

@@ -4,36 +4,32 @@
     <!-- about -->
     <section class="about py-5" id="about">
       <div class="container py-lg-5 py-sm-3">
-        <h3 class="heading mb-sm-5 mb-4 text-center"> About Tsavo Seed</h3>
+        <h3 class="heading mb-sm-5 mb-4 text-center"> About Us</h3>
         <div class="row">
-          <div class="col-lg-6 about-left">
-            <h5 class="mb-3">Few Words About Us!</h5>
-            <h3 class="mb-lg-4 mb-2">Tsavo Seed as an affiliate of Gicheha Farms Ltd, that was started in 2018</h3>
-            <h4 class=""> with main objective of producing, cleaning, packaging and selling high quality hybrid seeds.</h4>
+          <div class="col-lg-5 about-left">
+            <div class="img-container mb-3 text-center">
+              <img src="../assets/images/logo.png" alt="">
+            </div>
+            <div class="">
+              <h5 class="mb-3">Our principle customer industries include:</h5>
+              <ul class="about-list font-italic ml-3">
+                <li class="font-italics"><p>Maize and beans farmers in Kenya</p></li>
+                <li class="font-italics"><p>Chosen Seed companies in Kenya under Contract farming</p></li>
+                <li class="font-italics"><p>Chosen Agrochemicals companies in Kenya</p></li>
+              </ul>
+            </div>
           </div>
-          <div class="col-lg-6 pl-xl-5 mt-lg-0 mt-4 about-right">
-            <h4 class="mb-2 font-weight-bold">The mother company, Gicheha Farms Ltd focuses at the following as the main areas of business:</h4>
-            <ul>
-              <li><span class="fa fa-pagelines"></span> Production</li>
-              <li><span class="fa fa-pagelines"></span> Processing</li>
-              <li><span class="fa fa-pagelines"></span> Marketing</li>
-            </ul>
-            <h4 class="my-2 font-weight-bold">Main Products</h4>
-            <ul>
-              <li><span class="fa fa-pagelines"></span> Seed Maize</li>
-              <li><span class="fa fa-pagelines"></span> Seed Beans</li>
-              <li><span class="fa fa-pagelines"></span> Livestock</li>
-            </ul>
-            <h4 class="my-2 font-weight-bold">Principle Customer Industries</h4>
-            <ul>
-              <li><span class="fa fa-pagelines"></span> Chosen Seed companies in Kenya under Contract farming.</li>
-              <li><span class="fa fa-pagelines"></span> Chosen Agrochemicals companies in Kenya</li>
-              <li><span class="fa fa-pagelines"></span> Maize and Beans farmers in Kenya.</li>
-            </ul>
-            <p class="pt-3 mt-3 border-top"><span class="fa fa-quote-left text-color mr-2"></span>Tsavo Seed, being a value –chain player, undertakes the seed marketing role of the seed
+          <div class="col-lg-7 pl-xl-5 mt-lg-0 mt-4 about-right">
+            <p class="mb-4">
+              Tsavo Seed as an affiliate of Gicheha Farms Ltd was started in 2018 with the main objective of producing, cleaning, packaging and selling high quality hybrid seeds. The mother company, Gicheha Farms Ltd, focuses on three main areas of business: Production, Processing &amp; Marketing.
+            </p>
+            <p class="pt-3 mt-4 border-top">Tsavo Seed, being a value –chain player, undertakes the seed marketing role of the seed
               department. The main activities include market development, Agro-dealer recruitment, product
               promotion, customer service, quality checks and after sales service among others.</p>
           </div>
+          <p class="text-center mt-5 p-3">
+            <span class="fa fa-quote-left text-color mr-2"></span>Providing farmers with new high-yielding and hybrid seed varieties is an important part of the solution to agricultural development.<span class="fa fa-quote-right text-color mr-2"></span>
+          </p>
         </div>
       </div>
     </section>
@@ -58,87 +54,84 @@
     <section class="w3_stats" id="stats">
       <div class="overlay-clr py-sm-5">
         <div class="container py-5">
-          <div class="w3-stats">
-            <h3 class="heading mb-sm-5 mb-4 text-center"> Our Values</h3>
-            <div class="row text-center">
-              <div class="col-lg-3 col-6">
+          <div class="w3-stats mt-4">
+            <h3 class="heading mb-sm-5 mb-4 text-center">&#126; Our Mission &#126;</h3>
+            <div class="row">
+              <div class="col">
                 <div class="counter">
                   <!-- <span class="fa fa-smile-o"></span> -->
                   <!-- <div class="timer count-title count-number mt-2">5100</div> -->
-                  <p class="count-text text-uppercase">Professionalism</p>
+                  <p class="count-text font-italic text-center">
+                    To avail high performing certified seeds to farmers in time
+                  </p>
                 </div>
               </div>
-              <div class="col-lg-3 col-6">
+            </div>
+          </div>
+          <div class="w3-stats mt-0">
+            <h3 class="heading mb-sm-5 mb-4 text-center">&#126; Our Vision &#126;</h3>
+            <div class="row">
+              <div class="col">
+                <div class="counter">
+                  <!-- <span class="fa fa-smile-o"></span> -->
+                  <!-- <div class="timer count-title count-number mt-2">5100</div> -->
+                  <p class="count-text font-italic text-center">
+                    To be a major player in food insecurity alleviation in Africa through provision of professionally bred high performing varieties
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w3-stats">
+            <h3 class="heading mb-sm-5 mb-4 text-center">&#126; Our Values &#126;</h3>
+            <div class="row text-center">
+              <div class="col-lg-4 col-6">
+                <div class="counter">
+                  <!-- <span class="fa fa-smile-o"></span> -->
+                  <!-- <div class="timer count-title count-number mt-2">5100</div> -->
+                  <p class="count-text font-italic">Professionalism</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
                 <div class="counter">
                   <!-- <span class="fa fa-pagelines"></span> -->
                   <!-- <div class="timer count-title count-number mt-2">2271</div> -->
-                  <p class="count-text text-uppercase">Commitment</p>
+                  <p class="count-text font-italic">Commitment</p>
                 </div>
               </div>
-              <div class="col-lg-3 col-6 mt-lg-0 mt-5">
+              <div class="col-lg-4 col-6 mt-lg-0 mt-5">
                 <div class="counter">
                   <!-- <span class="fa fa-users"></span> -->
                   <!-- <div class="timer count-title count-number mt-2">1120+</div> -->
-                  <p class="count-text text-uppercase">Team Work</p>
+                  <p class="count-text font-italic">Team Work</p>
                 </div>
               </div>
-              <div class="col-lg-3 col-6 mt-lg-0 mt-5">
+              <div class="col-lg-4 col-6 mt-lg-0 mt-5">
                 <div class="counter">
                   <!-- <span class="fa fa-leaf"></span> -->
                   <!-- <div class="timer count-title count-number mt-2">2690</div> -->
-                  <p class="count-text text-uppercase">Trust</p>
+                  <p class="count-text font-italic">Trust</p>
                 </div>
               </div>
-              <div class="col-lg-3 col-6 mt-lg-0 mt-5">
+              <div class="col-lg-4 col-6 mt-lg-0 mt-5">
                 <div class="counter">
                   <!-- <span class="fa fa-leaf"></span> -->
                   <!-- <div class="timer count-title count-number mt-2">2690</div> -->
-                  <p class="count-text text-uppercase">Quality</p>
+                  <p class="count-text font-italic">Quality</p>
                 </div>
               </div>
-              <div class="col-lg-3 col-6 mt-lg-0 mt-5">
+              <div class="col-lg-4 col-6 mt-lg-0 mt-5">
                 <div class="counter">
                   <!-- <span class="fa fa-leaf"></span> -->
                   <!-- <div class="timer count-title count-number mt-2">2690</div> -->
-                  <p class="count-text text-uppercase">Innovation</p>
+                  <p class="count-text font-italic">Innovation</p>
                 </div>
               </div>
-              <div class="col-lg-3 col-6 mt-lg-0 mt-5">
+              <div class="col mt-lg-0 mt-5">
                 <div class="counter">
                   <!-- <span class="fa fa-leaf"></span> -->
                   <!-- <div class="timer count-title count-number mt-2">2690</div> -->
-                  <p class="count-text text-uppercase">Growing Together</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w3-stats mt-4">
-            <h3 class="heading mb-sm-5 mb-4 text-center"> Our Vision</h3>
-            <div class="row">
-              <div class="col">
-                <div class="counter">
-                  <!-- <span class="fa fa-smile-o"></span> -->
-                  <!-- <div class="timer count-title count-number mt-2">5100</div> -->
-                  <p class="count-text text-uppercase text-center">
-                    To be a major player in food insecurity alleviation in Africa through provision of professionally bred high performing varieties.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="w3-stats mt-4">
-            <h3 class="heading mb-sm-5 mb-4 text-center"> Our Mission</h3>
-            <div class="row">
-              <div class="col">
-                <div class="counter">
-                  <!-- <span class="fa fa-smile-o"></span> -->
-                  <!-- <div class="timer count-title count-number mt-2">5100</div> -->
-                  <p class="count-text text-uppercase text-center">
-                    To avail high performing certified seeds to farmers in time.
-                  </p>
+                  <p class="count-text font-italic">Growing Together</p>
                 </div>
               </div>
             </div>
@@ -153,26 +146,26 @@
     <div class="team py-5" id="team">
       <div class="container py-lg-3">
         <h3 class="heading mb-sm-5 mb-4 text-center border-bottom"> Our Team</h3>
-        <h3 class="heading mb-sm-3 mb-1 text-center"> Management</h3>
+        <h3 class="heading mb-sm-3 mb-1 text-center">Our Leadership</h3>
         <div class="row team-bottom text-center">
           <div v-for="(member, index) in team.management" :key="index" class="col-md-4 col-sm-12 team-grid mt-sm-0 mt-5">
             <img :src="require(`../assets/images/${member.photo}`)" class="img-fluid" alt="">
             <div class="caption">
               <div class="team-text">
-                <h4>{{ member.name }}</h4>
+                <h4 class="text-capitalize">{{ member.name }}</h4>
               </div>
-              <p>{{ member.position }}</p>
+              <p class="text-capitalize font-italic">{{ member.position }}</p>
             </div>
           </div>
         </div>
-        <h3 class="heading mb-sm-3 mb-1 mt-5 text-center"> Technical Sales Representatives</h3>
+        <h3 class="heading mb-sm-3 mb-1 mt-5 text-center">Our Technical Sales Representatives</h3>
         <div class="row team-bottom text-center">
-          <div v-for="(member, index) in team.representatives" :key="index" class="col-md-4 col-sm-12 team-grid mt-sm-0 mt-5">
+          <div v-for="(member, index) in team.representatives" :key="index" :class="{'col-md-4' :index < 10, 'col-md-6' : index >= 9}" class="col-sm-12 team-grid mt-sm-0 mt-5">
             <div class="caption">
               <div class="team-text">
-                <h4>{{ member.name }}</h4>
+                <h4 class="text-capitalize">{{ member.name }}</h4>
               </div>
-              <p>{{ member.location }}</p>
+              <p class="font-italic">{{ member.location }}</p>
             </div>
           </div>
         </div>
@@ -204,7 +197,7 @@ export default {
           },
           {
             name: 'Peter K. Randa',
-            position: 'Head of Marketing & Business Development – Tsavo Seed',
+            position: 'Head of Marketing & Business Development',
             photo: 'default-user.jpg'
           },
           {
