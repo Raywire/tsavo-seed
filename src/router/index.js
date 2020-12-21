@@ -59,6 +59,14 @@ const routes = [
     }
   },
   {
+    path: '/hub',
+    name: 'hub',
+    component: lazyLoad('Hub'),
+    meta: {
+      title: 'Tsavo Seed - Hub'
+    }
+  },
+  {
     path: '*',
     name: '404Error',
     component: lazyLoad('errors/NotFound'),
