@@ -7,17 +7,17 @@
         <div v-for="(product, index) in products" :key="index" class="col blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">	
           <img :src="require(`../assets/images/${product.image}`)" class="img-fliud displayed" alt="" />
           <div class="blog-info">
-            <h4>{{ product.name }}</h4>
+            <h4 class="text-center">{{ product.name }}</h4>
             <ul>
               <li v-for="(detail, index) in product.details.slice(0, 3)" :key="index" class="mt-2">
-                <span class="fa fa-pagelines"></span> {{ detail }}
+                <p><span class="fa fa-pagelines"></span> {{ detail }}</p>
               </li>
               <div :id="index" class="collapse">
                 <li v-for="(detail, index) in product.details.slice(3)" :key="index" class="mt-2">
-                  <span class="fa fa-pagelines"></span> {{ detail }}
+                  <p><span class="fa fa-pagelines"></span> {{ detail }}</p>
                 </li>
               </div>
-              <div class="mt-2">
+              <div class="mt-2 text-center">
                 <button class="btn btn-outline-success btn-sm" @click="revealInfo(index)">
                 <span>
                   <svg style="width:24px;height:24px" :id="`caret-${index}`" class="caret-down" viewBox="0 0 24 24">
