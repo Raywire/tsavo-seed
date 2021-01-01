@@ -8,7 +8,7 @@
         <h3 class="heading mb-sm-5 mb-4 text-center"> Our Services</h3>
         <div class="row">
           <div v-for="(service, index) in services.slice(0, 3)" :key="index" :class="`${index === 2 ? 'mx-auto' : ''}`" class="col-lg-4 col-sm-6 mt-lg-0 mt-4">
-            <div class="home-grid">
+            <div class="home-grid border-radius-5">
               <span class="num-title">{{ `0${index + 1}` }}</span>
               <h4 class="home-title mt-3">{{ service.title }}</h4>
               <p class="mt-2 clamp-2 mb-1">
@@ -22,7 +22,7 @@
         <div class="row">
           <div class="row col-lg-9 mt-lg-5 mt-4 mx-auto px-lg-3 px-0">
             <div class="col-lg-6 col-sm-6">
-              <div class="home-grid">
+              <div class="home-grid border-radius-5">
                 <span class="num-title">04</span>
                 <h4 class="home-title mt-3">{{ services[3].title }}</h4>
                 <p class="mt-2 clamp-2">
@@ -32,7 +32,7 @@
               </div>
             </div>
             <div class="col-lg-6 col-sm-6 mt-sm-0 mt-4">
-              <div class="home-grid">
+              <div class="home-grid border-radius-5">
                 <span class="num-title">05</span>
                 <h4 class="home-title mt-3">{{ services[4].title }}</h4>
                 <p class="mt-2 clamp-2">

@@ -358,6 +358,10 @@ li > a:only-child:after { content: ''; }
 
 }
 
+.container img, .border-radius-5 {
+	border-radius: .5em;
+}
+
 @media all and (max-width : 330px) {
 
 	nav ul li {
