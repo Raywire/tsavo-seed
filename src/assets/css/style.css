@@ -142,7 +142,7 @@ nav ul li {
 
 /* Styling the links */
 nav a {
-    color: #ddd;
+    color: #fff;
     text-transform: capitalize;
     letter-spacing: 1px;
     padding-left: 0;
@@ -453,13 +453,17 @@ li > a:only-child:after { content: ''; }
 }
 .overlay {
     min-height: 770px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
 }
 .overlay1 {
     min-height: 770px;
     background: rgba(0, 0, 0, 0.5);
 }
-
+.slider-text-container {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0.5em;
+  padding: 1em;
+}
 .button-style {
     padding: 15px 40px;
     color: #fff;

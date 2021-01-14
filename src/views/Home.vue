@@ -13,11 +13,13 @@
               <div class="overlay">
                 <div class="container">
                   <div class="w3layouts-banner-info text-center">
-                    <h3 class="text-wh">Production</h3>
-                    <h4 class="text-wh mx-auto my-4">Cultivating new crops to make farmers increase profits</h4>
-                    <p class="text-li mx-auto mt-2">Hybrid seed production is a very specialized field that requires high professional knowledge,
-                      experience and passion.</p>
-                    <router-link to="/services" class="button-style mt-sm-5 mt-4">Read More</router-link>
+                    <div class="slider-text-container">
+                      <h3 class="text-wh">Production</h3>
+                      <h4 class="text-wh mx-auto my-4">Cultivating new crops to make farmers increase profits</h4>
+                      <p class="text-li mx-auto mt-2">Hybrid seed production is a very specialized field that requires high professional knowledge,
+                        experience and passion.</p>
+                      <router-link to="/services" class="button-style mt-sm-5 mt-4">Read More</router-link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -28,10 +30,12 @@
               <div class="overlay1">
                 <div class="container">
                   <div class="w3layouts-banner-info text-center">
-                    <h3 class="text-wh">Processing</h3>
-                    <h4 class="text-wh mx-auto my-4">Cultivating new crops to make farmers increase profits</h4>
-                    <p class="text-li mx-auto mt-2">In agriculture and horticulture, seed treatment or seed dressing is a chemical, typically antimicrobial or fungicidal, with which seeds are treated (or "dressed") prior to planting</p>
-                    <router-link to="/services" class="button-style mt-sm-5 mt-4">Read More</router-link>
+                    <div class="slider-text-container">
+                      <h3 class="text-wh">Processing</h3>
+                      <h4 class="text-wh mx-auto my-4">Cultivating new crops to make farmers increase profits</h4>
+                      <p class="text-li mx-auto mt-2">In agriculture and horticulture, seed treatment or seed dressing is a chemical, typically antimicrobial or fungicidal, with which seeds are treated (or "dressed") prior to planting</p>
+                      <router-link to="/services" class="button-style mt-sm-5 mt-4">Read More</router-link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -42,10 +46,12 @@
               <div class="overlay">
                 <div class="container">
                   <div class="w3layouts-banner-info text-center">
-                    <h3 class="text-wh">Packaging</h3>
-                    <h4 class="text-wh mx-auto my-4">Cultivating new crops to make farmers increase profits</h4>
-                    <p class="text-li mx-auto mt-2">It is important to package seed in dry containers for proper storage.</p>
-                    <router-link to="/services" class="button-style mt-sm-5 mt-4">Read More</router-link>
+                    <div class="slider-text-container">
+                      <h3 class="text-wh">Packaging</h3>
+                      <h4 class="text-wh mx-auto my-4">Cultivating new crops to make farmers increase profits</h4>
+                      <p class="text-li mx-auto mt-2">It is important to package seed in dry containers for proper storage.</p>
+                      <router-link to="/services" class="button-style mt-sm-5 mt-4">Read More</router-link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -56,11 +62,13 @@
               <div class="overlay1">
                 <div class="container">
                   <div class="w3layouts-banner-info text-center">
-                    <h3 class="text-wh">Distribution</h3>
-                    <h4 class="text-wh mx-auto my-4">Cultivating new crops to make farmers increase profits</h4>
-                    <p class="text-li mx-auto mt-2">The overarching goal of functional seed systems is to ensure that seeds are available and accessible to all
-                      end users.</p>
-                    <router-link to="/services" class="button-style mt-sm-5 mt-4">Read More</router-link>
+                    <div class="slider-text-container">
+                      <h3 class="text-wh">Distribution</h3>
+                      <h4 class="text-wh mx-auto my-4">Cultivating new crops to make farmers increase profits</h4>
+                      <p class="text-li mx-auto mt-2">The overarching goal of functional seed systems is to ensure that seeds are available and accessible to all
+                        end users.</p>
+                      <router-link to="/services" class="button-style mt-sm-5 mt-4">Read More</router-link>
+                    </div>
                   </div>
                 </div>
               </div>
