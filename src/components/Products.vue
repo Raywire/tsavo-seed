@@ -8,7 +8,7 @@
           <div class="container p-lg-4 py-md-4">
             <div class="row core-grids">
               <div class="col-lg-4 core-left mt-2">	
-                <img src="../assets/images/Tsavo_WE3106.png" class="img-fliud" alt="" />
+                <img src="../assets/images/Tsavo_WE3106.png" class="img-fluid" alt="" />
                 <h4 class="mt-2">TSAVO WE-3106</h4>
               </div>
               <div class="col-lg-8 core-right text-justify">
@@ -28,7 +28,7 @@
                 </p>
               </div>
               <div class="col-lg-4 core-right mt-2">
-                <img src="../assets/images/Tsavo_WE4141.png" class="img-fliud" alt="" />
+                <img src="../assets/images/Tsavo_WE4141.png" class="img-fluid" alt="" />
                 <h4 class="mt-2">TSAVO WE-4141</h4>
               </div>
             </div>

@@ -1669,11 +1669,12 @@ html {
 	background-color: rgba(0, 0, 0, 0.5);
 	padding: 1em
 }
-.img-container img{
+.img-container{
 	width: 15em;
 	height:15em;
 	border: 1px solid black;
 	border-radius: 15em;
+	/* clip-path: circle(50% at 50% 45%); */
 }
 .about-list li{
 	list-style-type: disc;

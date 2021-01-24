@@ -129,7 +129,7 @@
       <div class="container py-md-4">
         <div class="row core-grids">
           <div class="col-lg-6 core-left">	
-            <img src="../assets/images/core.jpg" class="img-fliud" alt="" />
+            <img src="../assets/images/core.jpg" class="img-fluid" alt="" />
           </div>
           <div class="col-lg-6 core-right text-center mt-3">
             <h4 class="text-capitalize mt-4"><span class="fa fa-quote-left text-color mr-2"></span>

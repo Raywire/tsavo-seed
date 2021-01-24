@@ -7,8 +7,8 @@
         <h3 class="heading mb-sm-5 mb-4 text-center"> About Us</h3>
         <div class="row">
           <div class="col-lg-5 about-left">
-            <div class="img-container mb-3 text-center">
-              <img src="../assets/images/logo.png" alt="">
+            <div class="img-container mb-3 text-center ml-auto mr-auto">
+              <img class="img-fluid" src="../assets/images/logo.png" alt="">
             </div>
             <div class="">
               <h5 class="mb-3">Our principle customer industries include:</h5>
